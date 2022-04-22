@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://assets-global.website-files.com/5f29134b1db8386bf3256f4e/5f4a5bbcf24598e516ccd550_lensa-favicon.png" rel="shortcut icon" type="image/x-icon">
+    <link href="https://assets-global.website-files.com/5f29134b1db8386bf3256f4e/5f4a5bc16f49f63a80e893c0_prisma-app-icon.png" rel="apple-touch-icon">
+    <title>General lending</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script>
+    <script src="https://connect.facebook.net/signals/config/796946900702405?v=2.9.22&amp;r=stable" async=""></script>
+</head>
+<body>
+    <div class="container">
+        <div class="headerBord">
+            <header class="header">
+                <div class="header__logo">
+                    <img src="IMG/logo.svg" alt="">
+                </div>
+                <div class="header__button">
+                    <a href="https://apps.apple.com/US/app/id1436732536?mt=8" class="header__button_item w-button">
+                        <img src="IMG/install.svg" alt="">
+                    </a>
+                </div>
+            </header>
+        </div>
+        <main class="main">
+            <div class="main__title">
+                Choose the way of editing
+            </div>
+            <h6 class="main__slider-title titleOne">
+                Improve your photo in one tap
+            </h6>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="IMG/slide11-min.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="IMG/slide12-min.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="IMG/slide13-min.jpg" alt="">
+                    </div>
+                </div>
+                <div class="paginate">
+                    <img class="arrow-pagination-item" src="IMG/arrow.svg"/>
+                    <div class="swiper-pagination">
+                      <div class="swiper-pagination-bullet swiper-pagination-bullet-active"></div>
+                      <div class="swiper-pagination-bullet"></div>
+                      <div class="swiper-pagination-bullet"></div>
+                    </div>
+                </div>
+            </div>
+            <a href="https://apps.apple.com/US/app/id1436732536?mt=8">
+                <button class="sliderBtn w-button">Try for free</button>
+            </a>
+            <h6 class="main__slider-title titleTwo">
+                Unique sky for every photo
+            </h6>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="IMG/slide21-min.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="IMG/slide22-min.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="IMG/slide23-min.jpg" alt="">
+                    </div>
+                </div>
+                <div class="paginate">
+                    <img class="arrow-pagination-item" src="IMG/arrow.svg"/>
+                    <div class="swiper-pagination">
+                      <div class="swiper-pagination-bullet swiper-pagination-bullet-active"></div>
+                      <div class="swiper-pagination-bullet"></div>
+                      <div class="swiper-pagination-bullet"></div>
+                    </div>
+                </div>
+            </div>
+            <a href="https://apps.apple.com/US/app/id1436732536?mt=8">
+                <button class="sliderBtn w-button">Try for free</button>
+            </a>
+            <h6 class="main__slider-title titleThree">
+                Change the vibe, try on the effects
+            </h6>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="IMG/slide31-min.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="IMG/slide32-min.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="IMG/slide33-min.jpg" alt="">
+                    </div>
+                    </div>
+                    <div class="paginate">
+                        <img class="arrow-pagination-item" src="IMG/arrow.svg"/>
+                        <div class="swiper-pagination">
+                          <div class="swiper-pagination-bullet swiper-pagination-bullet-active"></div>
+                          <div class="swiper-pagination-bullet"></div>
+                          <div class="swiper-pagination-bullet"></div>
+                        </div>
+                    </div>
+            </div>
+            <a href="https://apps.apple.com/US/app/id1436732536?mt=8">
+                <button class="sliderBtn w-button">Try for free</button>
+            </a>
+        </main>
+        <footer class="footer">
+            <div class="footer__item itemOne">
+                © 2016-2022 Prisma Labs, Inc.
+            </div>
+            <div class="footer__item itemTwo">
+                <a href="">Privacy Policy</a>
+            </div>
+            <div class="footer__item itemTwo">
+                <a href="">Privacy Notice for California Residents</a>
+            </div>
+        </footer>
+    </div>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            direction: 'horizontal',
+            slidesPerView: '1.1',
+            // spaceBetween: 10,
+            grabCursor: true,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets' ,
+                clickable: 'true' ,
+             },
+        });
+
+        window.onload = function() {
+            var anchors = document.getElementsByTagName('*');
+            for(var i = 0; i < anchors.length; i++) {
+                var anchor = anchors[i];
+                anchor.onclick = function() {
+                    code = this.getAttribute('whenClicked');
+                    eval(code);   
+                }
+            }
+        }
+    </script>
+
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '796946900702405');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=796946900702405&ev=PageView&noscript=1"/>
+    </noscript>
+    <script>
+        function onClick() {
+            fbq('track', 'CompleteRegistration');
+        };
+    </script>
+    <script>
+        // w-button — класс для всех CTA кнопок котрые ведут в стор. По клику идет трансфер utm параметров в appsflyer
+      $('.w-button').click(e => {
+        e.preventDefault();
+        let currentParams = new URLSearchParams(window.location.search);
+        let targetUrl = new URL('https://lensa.onelink.me/tfG1?pid=facebook_landing');
+        targetUrl.searchParams.append('utm_source', 'Facebook');
+        if (currentParams.has('utm_medium')) {
+          targetUrl.searchParams.append('c', currentParams.get('utm_medium'));
+          targetUrl.searchParams.append('utm_medium', currentParams.get('utm_medium'));
+        }
+        if (currentParams.has('utm_content')) {
+          targetUrl.searchParams.append('af_adset', currentParams.get('utm_content'));
+          targetUrl.searchParams.append('utm_content', currentParams.get('utm_content'));
+        }
+         if (currentParams.has('adname')) {
+          targetUrl.searchParams.append('af_ad', currentParams.get('adname'));
+          targetUrl.searchParams.append('adname', currentParams.get('adname'));
+        }
+        // Cookie starts
+        const getCookie = (name) => {
+          let matches = document.cookie.match(new RegExp(
+            '(?:^|; )' + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + '=([^;]*)'
+          ));
+          return matches ? decodeURIComponent(matches[1]) : undefined;
+        }
+        const fbp = getCookie('_fbp');
+        const fbc = getCookie('_fbc');
+        targetUrl.searchParams.append('af_sub1', `${fbp || ''}`);
+        targetUrl.searchParams.append('af_sub2', `${fbc || ''}`);
+        // Cookie ends
+        console.log(`Link URL: ${targetUrl.href}`);
+        window.open(targetUrl.href, '_blank');
+        });
+    </script>
+</body>
+</html>
