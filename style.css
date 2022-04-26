@@ -195,9 +195,15 @@ a {
 @media (max-width:405px) {
     .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
         left: 10px;
+        bottom: 33px;
     }
 
     .arrow-pagination-item {
         left: 120px;
+    }
+
+    .imgg {
+        width: 270px;
+        height: 390px;
     }
 }
