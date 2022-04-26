@@ -129,14 +129,18 @@
     <script>
         const swiper = new Swiper('.swiper', {
             direction: 'horizontal',
-            slidesPerView: '1.15',
-            spaceBetween: 1,
+            slidesPerView: '1.1',
             grabCursor: true,
             pagination: {
                 el: '.swiper-pagination',
                 type: 'bullets' ,
                 clickable: 'true' ,
              },
+            //  breakpoints: {
+            //     405: {
+            //      slidesPerView: '1.05'
+            //  }
+            //  }
         });
 
         window.onload = function() {
